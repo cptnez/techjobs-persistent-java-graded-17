@@ -40,10 +40,11 @@ public class Skill extends AbstractEntity {
         this.description = description;
     }
 
-    @Override
-    public String toString() {
-        return "Skill{" +
-                "description='" + description + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Skill{" +
+//                "description='" + description + '\'' +
+//                ", jobs=" + jobs +
+//                '}';
+//    }
 }

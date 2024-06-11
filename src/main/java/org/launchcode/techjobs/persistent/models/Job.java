@@ -8,10 +8,11 @@ import java.util.List;
 
 @Entity
 public class Job extends AbstractEntity {
-    @ManyToOne
-    private Employer employer;
+
     @ManyToMany
     private List<Skill> skills = new ArrayList<>();
+    @ManyToOne
+    private Employer employer;
 
 
     public Job() {
@@ -40,4 +41,12 @@ public class Job extends AbstractEntity {
     public void setSkills(List<Skill> skills) {
         this.skills = skills;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Job{" +
+//                "skills=" + skills +
+//                ", employer=" + employer +
+//                '}';
+//    }
 }
